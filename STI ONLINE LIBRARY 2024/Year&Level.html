@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Library Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #0072BC; /* Changed color */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar {
+            background-color: #A5C6FF; /* Changed color */
+            overflow: hidden;
+        }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: #fff;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .navbar a:hover {
+                    background-color: #ddd;
+                    color: #fff;
+                }
+
+        /* Style for the Year/Level link */
+        .year-level-link {
+            background-color: white;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .columns-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex-basis: calc(50% - 20px); /* 50% width with 20px margin */
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc; /* Border */
+            box-sizing: border-box; /* Ensure border width is included in total width */
+            cursor: pointer; /* Cursor pointer */
+        }
+
+        /* Center align the title */
+        .header h1 {
+            margin: 0 auto; /* Center horizontally */
+        }
+
+
+        /* Style for Senior High School Section */
+        .senior-high-school {
+            background-color: #FFA500; /* Yellowish Orangey */
+        }
+
+        /* Style for College Section */
+        .college {
+            background-color: #0072BC; /* Blue */
+        }
+
+        /* Hover effect for columns */
+        .column:hover {
+            background-color: #f0f0f0; /* Light gray */
+        }
+
+        .search-container {
+            display: flex;
+            flex-grow: 1;
+            max-width: 500px;
+            margin-left: 20px;
+        }
+
+            .search-container input[type=text] {
+                padding: 10px;
+                margin: 5px 0;
+                border: none;
+                border-radius: 5px;
+                font-size: 17px;
+            }
+
+            .search-container button {
+                padding: 10px;
+                margin: 5px 0;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                background: #ddd;
+            }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="images/stilogo6.png" width="127" height="63" alt="">
+        <h1>Welcome to STI VIGAN E-Library</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </div>
+    <div class="navbar">
+        <a href="http://127.0.0.1:5500/index.html" style="color: black;">Home</a>
+        <a href="file:///C:/Users/Acer/Desktop/STI%20ONLINE%20LIBRARY%202024/Magazine.html" style="color: black;">Magazines</a>
+        <a href="http://127.0.0.1:5500/E-books.html" style="color: black;">E-books</a>
+        <a href="#subjects" style="color: black;">Subjects</a>
+        <a href="#year_level" class="year-level-link" style="color: black;">Year/Level</a> <!-- Updated link text -->
+    </div>
+    <div class="content">
+        <!-- Senior High School Section -->
+        <div class="section-title senior-high-school" style="color: white;">Senior High School</div>
+        <!-- Columns Container -->
+        <div class="columns-container">
+            <!-- Column 1 -->
+            <div class="column">
+                <h3><a href="file:///C:/Users/Acer/Desktop/STI%20ONLINE%20LIBRARY%202024/Y&LABM.html">Accountancy, Business, and Management</a></h3>
+                <p>Content for Accountancy, Business, and Management</p>
+            </div>
+            <!-- Column 2 -->
+            <div class="column">
+                <h3>Science, Technology, Engineering, and Mathematics</h3>
+                <p>Content for Science, Technology, Engineering, and Mathematics</p>
+            </div>
+            <!-- Column 3 -->
+            <div class="column">
+                <h3>Humanities and Social Sciences</h3>
+                <p>Content for Humanities and Social Sciences</p>
+            </div>
+            <!-- Column 4 -->
+            <div class="column">
+                <h3>IT in Mobile App and Web Development</h3>
+                <p>Content for IT in Mobile App and Web Development</p>
+            </div>
+            <!-- Column 5 -->
+            <div class="column">
+                <h3>Culinary + Arts</h3>
+                <p>Content for Culinary Arts</p>
+            </div>
+        </div>
+
+        <!-- College Section -->
+        <div class="section-title college" style="color: white;">College</div>
+        <!-- Columns Container -->
+        <div class="columns-container">
+            <!-- Column 1 -->
+            <div class="column">
+                <h3>Bachelor of Science in Computer Science (BSCS)</h3>
+                <p>Content for BSCS program</p>
+            </div>
+            <!-- Column 2 -->
+            <div class="column">
+                <h3>2-year Hospitality and Restaurant Services (HRS)</h3>
+                <p>Content for HRS program</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
